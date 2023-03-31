@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Grading System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link href="gradestyle.css" rel="stylesheet">
+    </head>
+<body>
+    <body style="background-color: rgb(111, 146, 146)";</body>
+    <div class="container fw-bold">
+        <form>
+        <div class="row">
+            <div class="col-8 m-auto text-white bg-dark p-3">
+                <h3>IT2R5 - Grade System </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-12  m-auto d-flex justify-content-around">
+                <div class="col-md-4">
+            <div class="book1 mb-3">
+                <label>Computer</label>
+                <input class="form-control" id="bookOne" type="number" name="" placeholder="Marks">
+            </div>
+            <div class="book2 mb-3">
+                <label>Science</label>
+                <input class="form-control" id="bookTwo" type="number" name="" placeholder="Marks">
+            </div>
+            <div class="book3 mb-3">
+                <label>English</label>
+                <input class="form-control" id="bookThree" type="number" name="" placeholder="Marks">
+            </div>
+            <div class="book4 mb-3">
+                <label>Filipino</label>
+                <input class="form-control" id="bookFour" type="number" name="" placeholder="Marks">
+            </div>
+            <div class="book5 mb-3">
+                <label>Physics</label>
+                <input class="form-control" id="bookFive" type="number" name="" placeholder="Marks">
+            </div>  
+            <div class="book6 mb-3">
+                <label>Mathematics</label>
+                <input class="form-control" id="bookSix" type="number" name="" placeholder="Marks">
+            </div>
+            <div class="book7 mb-3">
+                <label>Calculus</label>
+                <input class="form-control" id="bookSeven" type="number" name="" placeholder="Marks">
+            </div>       
+            
+                <button type= "button" class="btn btn-warning col-12 mb-3" onclick="Calculate()">Calculate</button>
+                <button type="button" class="btn btn-warning col-12 mb-3" value="Refresh" onclick="window.location.reload()">Reset</button>
+                </form>
+             </div>
+        </div>
+            <div class="col-md-4 d-flex align-items-center">
+            <table class="table table-bordered border-dark d-flex ">
+                <tr>
+                    <td>Overall Marks: </td>
+                    <td>700/700</td>
+                </tr>
+                <tr>
+                    <td>Obtained Total Marks: </td>
+                    <td id="obtain"></td>
+                </tr>
+                <tr>
+                    <td>Percentage: </td>
+                    <td id="per" + "%"></td>
+                </tr>
+            
+                <tr>
+                    <td>Description: </td>
+                    <td id="gardy"></td>
+                </tr>
+                <tr>
+                    <td>Remarks: </td>
+                    <td id="Remarks"></td>
+                </tr>
+            </table>
+            </div>
+
+<script type="text/javascript" src="grades.js"></script>
+</body>
+</html>
